@@ -5,13 +5,7 @@ const routes = [
     component: () => import('pages/index.vue'),
     children: [
     ]
-  },
-  {
-    path: '/loans',
-    component: () => import('pages/loans.vue'),
-    children: [
-    ]
-  },
+  }
 ]
 
 // Always leave this as last one
