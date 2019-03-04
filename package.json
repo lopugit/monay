@@ -1,0 +1,38 @@
+{
+  "name": "monay",
+  "version": "0.0.1",
+  "description": "A Quasar Framework app",
+  "productName": "Monay",
+  "cordovaId": "org.cordova.quasar.app",
+  "author": "lopu <ireply@myleisure.com.au>",
+  "private": true,
+  "scripts": {
+    "test": "echo \"No test specified\" && exit 0",
+		"dev": "pm2 start ecosystem.config.js && pm2 log monayDev",
+		"push" : "git add . ; git commit -m 'did I do that?' ; git push origin dev",
+		"pull" : "git pull origin dev"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "vue-i18n": "^7.3.3"
+  },
+  "devDependencies": {
+    "node-sass": "^4.11.0",
+    "quasar-cli": "^0.17.0",
+    "sass-loader": "^7.1.0",
+    "strip-ansi": "=3.0.1"
+  },
+  "engines": {
+    "node": ">= 8.9.0",
+    "npm": ">= 5.6.0",
+    "yarn": ">= 1.6.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 10"
+  ],
+  "resolutions": {
+    "ajv": "6.8.1"
+  }
+}
